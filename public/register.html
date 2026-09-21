@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | FoodBridge</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth-page">
+  <header class="navbar">
+    <a class="brand" href="/">Food<span>Bridge</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="auth-wrapper">
+    <section class="auth-card">
+      <p class="eyebrow">JOIN THE COMMUNITY</p>
+      <h1>Create your account</h1>
+      <p class="muted">Choose how you want to support food sharing.</p>
+
+      <form id="registerForm">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" placeholder="Optional">
+
+        <label for="role">Account type</label>
+        <select id="role" name="role" required>
+          <option value="donor">Food donor</option>
+          <option value="volunteer">Volunteer</option>
+        </select>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Minimum 6 characters" required>
+
+        <button class="button primary full-width" type="submit">Create account</button>
+      </form>
+
+      <p id="formMessage" class="form-message"></p>
+      <p class="auth-bottom">Already have an account? <a href="/login.html">Login here</a></p>
+    </section>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History | FoodBridge</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">Food<span>Bridge</span></a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/dashboard.html">Dashboard</a>
+      <a href="/donate.html">Donate Food</a>
+      <a href="/history.html">History</a>
+      <a href="/login.html" id="authLink">Login</a>
+      <button class="nav-logout hidden" id="logoutButton">Logout</button>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="page-title">
+      <p class="eyebrow">YOUR ACTIVITY</p>
+      <h1>Donation and pickup history</h1>
+      <p id="historyIntro" class="muted"></p>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-heading">
+        <p class="eyebrow">DONATIONS</p>
+        <h2>Food donation history</h2>
+      </div>
+      <div id="donationHistory" class="table-card"></div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-heading">
+        <p class="eyebrow">PICKUPS</p>
+        <h2>Pickup requests</h2>
+      </div>
+      <div id="pickupHistory" class="table-card"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FoodBridge. Share food. Spread hope.</p>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/history.js"></script>
+</body>
+</html>

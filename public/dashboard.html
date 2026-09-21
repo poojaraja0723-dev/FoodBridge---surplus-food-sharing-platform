@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | FoodBridge</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">Food<span>Bridge</span></a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/dashboard.html">Dashboard</a>
+      <a href="/donate.html">Donate Food</a>
+      <a href="/history.html">History</a>
+      <a href="/login.html" id="authLink">Login</a>
+      <button class="nav-logout hidden" id="logoutButton">Logout</button>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="page-title">
+      <p class="eyebrow">COMMUNITY OVERVIEW</p>
+      <h1>FoodBridge dashboard</h1>
+      <p id="welcomeText" class="muted"></p>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span>Total donations</span>
+        <strong id="totalDonations">0</strong>
+        <small>All registered donations</small>
+      </article>
+
+      <article class="stat-card green">
+        <span>Food rescued</span>
+        <strong id="foodRescued">0</strong>
+        <small>Total quantity shared</small>
+      </article>
+
+      <article class="stat-card orange">
+        <span>Pending pickups</span>
+        <strong id="pendingPickups">0</strong>
+        <small>Requests awaiting action</small>
+      </article>
+
+      <article class="stat-card purple">
+        <span>Active volunteers</span>
+        <strong id="activeVolunteers">0</strong>
+        <small>Registered volunteers</small>
+      </article>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-heading inline-heading">
+        <div>
+          <p class="eyebrow">AVAILABLE NOW</p>
+          <h2>Food waiting for pickup</h2>
+        </div>
+        <span id="userRoleBadge" class="badge"></span>
+      </div>
+
+      <div id="donationsList" class="donation-grid"></div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-heading">
+        <p class="eyebrow">PICKUP ACTIVITY</p>
+        <h2>Recent requests</h2>
+      </div>
+
+      <div id="pickupsList" class="table-card"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FoodBridge. Share food. Spread hope.</p>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
